@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXListView?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import de.jensd.fx.glyphs.emojione.EmojiOneView?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane fx:id="PAnchor" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="523.0" prefWidth="804.0" styleClass="backgroundSinReondeo" stylesheets="@../CSS/css.css" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <JFXListView fx:id="LV" layoutX="28.0" layoutY="26.0" prefHeight="465.0" prefWidth="264.0" />
+      <JFXButton fx:id="BSeleccionar" layoutX="325.0" layoutY="110.0" onAction="#apretoSeleccionar" prefHeight="32.0" prefWidth="174.0" styleClass="botomGrisOscuro" text="Seleccionar">
+         <graphic>
+            <MaterialDesignIconView glyphName="CHECK_ALL" size="19" styleClass="icono" />
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="BCambiarNombre" layoutX="325.0" layoutY="154.0" onAction="#apretoCambiarNombre" prefHeight="32.0" prefWidth="174.0" styleClass="botomGrisOscuro" text="Cambiar Nombre">
+         <graphic>
+            <FontAwesomeIconView glyphName="TERMINAL" size="20.0" styleClass="icono" />
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="BModificarInformacion" layoutX="325.0" layoutY="199.0" onAction="#apretoModificarInformacion" prefHeight="32.0" prefWidth="174.0" styleClass="botomGrisOscuro" text="Modificar Informacion">
+         <graphic>
+            <FontAwesomeIconView glyphName="PENCIL_SQUARE_ALT" size="20.0" styleClass="icono" />
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="BCargarInformacion" layoutX="325.0" layoutY="286.0" onAction="#apretoCargarInformacion" prefHeight="32.0" prefWidth="174.0" styleClass="botomGrisOscuro" text="Cargar Informaciones">
+         <graphic>
+            <EmojiOneView glyphName="OPEN_FILE_FOLDER" size="19" styleClass="icono" />
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="BGuardarInforamcion" layoutX="325.0" layoutY="330.0" onAction="#apretoGuardarInforamcion" prefHeight="32.0" prefWidth="174.0" styleClass="botomGrisOscuro" text="Guardar Informaciones">
+         <graphic>
+            <FontAwesomeIconView glyphName="FLOPPY_ALT" size="19" styleClass="icono" />
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="BCancelar" layoutX="325.0" layoutY="375.0" onAction="#apretoCancelar" prefHeight="32.0" prefWidth="174.0" styleClass="botomGrisOscuro" text="Cancelar">
+         <graphic>
+            <FontAwesomeIconView glyphName="ANGLE_DOUBLE_LEFT" size="20.0" styleClass="icono" />
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="BEliminarInformacion" layoutX="325.0" layoutY="243.0" onAction="#apretoEliminarInformacion" prefHeight="32.0" prefWidth="174.0" styleClass="botomGrisOscuro" text="Eliminar Informacion">
+         <graphic>
+            <MaterialDesignIconView glyphName="DELETE_FOREVER" size="19" styleClass="icono" />
+         </graphic>
+      </JFXButton>
+      <JFXTextArea fx:id="T" editable="false" layoutX="520.0" layoutY="26.0" prefHeight="465.0" prefWidth="264.0" style="-fx-background-color: white;" />
+   </children>
+</AnchorPane>

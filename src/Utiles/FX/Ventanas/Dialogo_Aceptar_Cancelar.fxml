@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.emojione.EmojiOneView?>
+<?import java.net.URL?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="PAnchor" prefHeight="205.0" prefWidth="421.0" styleClass="backgroundSinReondeo" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Text fx:id="Te" fill="#f8f5f5" layoutX="44.0" layoutY="76.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ya Existe, desea sobrescribir? ">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <JFXButton fx:id="BCancelar" layoutX="44.0" layoutY="121.0" onMousePressed="#apretoCancelar" prefHeight="32.0" prefWidth="131.0" styleClass="botomGrisOscuro" text="Cancelar">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="BAceptar" layoutX="238.0" layoutY="121.0" onMousePressed="#apretoAceptar" prefHeight="33.0" prefWidth="131.0" styleClass="botomGrisOscuro" text="Aceptar">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </JFXButton>
+      <EmojiOneView fx:id="Icono" glyphName="WARNING" layoutX="304.0" layoutY="89.0" size="60" />
+   </children>
+   <stylesheets>
+      <URL value="@CoarseGrid.css" />
+      <URL value="@../CSS/css.css" />
+   </stylesheets>
+</AnchorPane>
